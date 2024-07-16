@@ -4,9 +4,7 @@
 lorem lorem
 
 ## Tech Stack
-- Laravel
-- Livewire
-- Laravel Sail
+- Laravel ( Sail, Livewire, Jetstream, Tailwind, Vite )
 - MySQL
 - Redis
 - Docker Desktop
@@ -30,6 +28,7 @@ Ensure you have the following installed:
 - Ubuntu WSL2
 - Composer
 - PHP 8.2+
+- NPM 18+
 
 ## Getting Started
 1. **Clone the repository:**
