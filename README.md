@@ -4,7 +4,7 @@
 lorem lorem
 
 ## Tech Stack
-- Laravel ( Sail, Livewire, Jetstream, Tailwind, Vite )
+- Laravel ( Sail, Livewire, Breeze, Tailwind, Vite )
 - MySQL
 - Redis
 - Docker Desktop
