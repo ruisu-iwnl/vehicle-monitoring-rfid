@@ -35,7 +35,7 @@
         }
     </style>
     <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle"/>
+        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle border:1px"/>
         <h1>User Login</h1>
         <p>--------------------------------------------------</p>
         <div class="form-group">
