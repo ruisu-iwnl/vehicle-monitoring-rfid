@@ -41,7 +41,7 @@
         <p>--------------------------------------------------</p>
         <form>
         <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                <input type="email" class="form-control" placeholder="Email Address">
             </div>
             <div class="form-group">
                 <input type="password" class="form-control" placeholder="Password">
