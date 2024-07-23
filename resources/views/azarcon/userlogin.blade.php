@@ -40,7 +40,7 @@
         <p>--------------------------------------------------</p>
         <div class="form-group">
             <label class="label" for="email">Email Address</label>
-                <input type="email" id="email" class="form-control" placeholder="Email Address" size="25">
+                <input type="email" id="email" class="form-control" placeholder="Example: Juandelacruz@gmail.com" size="25">
             </div>
             <div class="form-group">
             <label class="label" for="password" size="30">Password</label>
@@ -52,7 +52,7 @@
         <br>
             <a href="{{ url('Landing') }}" class="link">Back to Landing Page</a>
             <br>
-            <p>Don't have an account? <a href="{{ url('') }}" class="link">Create one</a></p>
+            <p>Don't have an account? <a href="{{ url('userregistration') }}" class="link">Create one</a></p>
     </div>
             @yield('content')
         </main>

@@ -8,7 +8,7 @@
         <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle"/>
         <h1 class="text-3xl font-bold text-center">Vehicle Management System</h1>
         <br>
-        <h2 class="text-center">User Registration</h2>
+        <h2 class="text-center">Admin Registration</h2>
         <p class="text-center">------------------------------------------------------------</p>
         </div>
 
@@ -24,6 +24,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            display: block; margin: auto;
         }
 
         .button:hover {
@@ -43,8 +44,8 @@
 
 <form>
     <div class="form-group" >
-    <label class="label" for="employee-number">Employee Number</label>
-    <input type="text" id="employee-number" class="form-control" placeholder="Example: Emp123456" size="35">
+    <label class="label" for="employee-id">Employee ID</label>
+    <input type="text" id="employee-id" class="form-control" placeholder="Example: Admin1234" size="35">
     <br>
     <label class="label" for="first-name">First Name</label>
     <input type="text" id="first-name" class="form-control" placeholder="Example: Juan" size="15">
@@ -60,10 +61,13 @@
     <label class="label" for="contact-number">Contact Number</label>
     <input type="tel" id="contact-number" class="form-control" placeholder="09XXXXXXXXX" size="35">
     <br>
+    <label class="label" for="confirm-contact-number">Confirm Contact Number</label>
+    <input type="tel" id="contact-number" class="form-control" placeholder="Confirm Contact Number" size="35">
+    <br>
     <label class="label" for="password">Password</label>
     <input type="password" id="email" class="form-control" placeholder="Enter Password" size="15">
     <label class="label" for="confirm-password">Confirm Password</label>
-    <input type="password" id="email" class="form-control" placeholder="Confirm Password" size="15">
+    <input type="password" id="email" class="form-control" size="15">
     <br>
 </div>
 
@@ -90,14 +94,14 @@
         -->
 
                         <br>
-                        <button type="button" id="submitButton" class="btn btn-primary btn-block" style="display: block; margin: auto;">Register</button>
+                        <button type="button" id="submitButton" class="link"> <a href="{{ url('adminlogin') }}" class="link"></a> Register</button>
     </form>
 
     <div class="row justify-content-center">
                             <div class="col-md-8">
                                 <div class="text-center mt-3">
                                     <legend class="border-bottom mb-4" style="display: block; margin: auto;"></legend>
-                                    <p>Already have an account? <a href="{{ url('userlogin') }}" class="link">Login</a></p>
+                                    <p>Already have an account? <a href="{{ url('adminlogin') }}" class="link">Login</a></p>
                                 </div>
                             </div>
                     </div>

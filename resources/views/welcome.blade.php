@@ -24,10 +24,20 @@
         .button:hover {
             background-color: #48b2e9;
         }
+
+        .link {
+            color: #00698f;
+            text-decoration: none;
+        }
+        
+       .link:hover {
+            color: #005073;
+        }
+
     </style>
 
         <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" width="400" class="margin-right:auto margin-left:auto display:block"/>
+        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" width="400"/>
         <h1 class="text-3xl font-bold">Vehicle Management System</h1>
         <p>------------------------------------------------------------</p>
         <button class="button">Login as User</button>

@@ -21,3 +21,7 @@ Route::get('/layout', function () {
 Route::get('/userregistration', function () {
     return view('azarcon.userregistration');
 });
+
+Route::get('/adminregistration', function () {
+    return view('azarcon.adminregistration');
+});
