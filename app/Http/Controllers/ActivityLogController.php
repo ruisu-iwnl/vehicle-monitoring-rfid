@@ -2,12 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class ActivityLogController extends Controller
 {
     public function index()
     {
-        return view('activitylogs'); 
+        $admin = Auth::guard('admin')->user();
+
+        if ($admin && Admin::where('emailaddress', $admin->emailaddress)->exists()) {
+            return view('activitylogs'); 
+        }
+
+        Auth::guard('admin')->logout();
+        Session::flush();
+        return redirect('/'); 
     }
 }
