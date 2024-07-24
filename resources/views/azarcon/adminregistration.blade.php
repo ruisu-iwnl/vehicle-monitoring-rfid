@@ -1,11 +1,11 @@
 @extends('layout')
 
-@section('title', 'Landing')
+@section('title', 'adminregistration')
 
 @section('content')
 
 <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle"/>
+        <img src="{{url('/Images/CELCOR.png')}}" alt="logo" width="385"/>
         <h1 class="text-3xl font-bold text-center">Vehicle Management System</h1>
         <br>
         <h2 class="text-center">Admin Registration</h2>
@@ -62,12 +62,12 @@
     <input type="tel" id="contact-number" class="form-control" placeholder="09XXXXXXXXX" size="35">
     <br>
     <label class="label" for="confirm-contact-number">Confirm Contact Number</label>
-    <input type="tel" id="contact-number" class="form-control" placeholder="Confirm Contact Number" size="35">
+    <input type="tel" id="confirm-contact-number" class="form-control" placeholder="Confirm Contact Number" size="35">
     <br>
     <label class="label" for="password">Password</label>
-    <input type="password" id="email" class="form-control" placeholder="Enter Password" size="15">
+    <input type="password" id="password" class="form-control" placeholder="Enter Password" size="15">
     <label class="label" for="confirm-password">Confirm Password</label>
-    <input type="password" id="email" class="form-control" size="15">
+    <input type="password" id="confirm-password" class="form-control" size="15">
     <br>
 </div>
 
@@ -94,7 +94,7 @@
         -->
 
                         <br>
-                        <button type="button" id="submitButton" class="link"> <a href="{{ url('adminlogin') }}" class="link"></a> Register</button>
+                        <a href="{{ url('adminlogin') }}" class="button">Register</a>
     </form>
 
     <div class="row justify-content-center">

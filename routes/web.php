@@ -25,3 +25,11 @@ Route::get('/userregistration', function () {
 Route::get('/adminregistration', function () {
     return view('azarcon.adminregistration');
 });
+
+Route::get('/dashboard', function () {
+    return view('azarcon.dashboard');
+});
+
+Route::get('/accountrecovery', function () {
+    return view('azarcon.accountrecovery');
+});

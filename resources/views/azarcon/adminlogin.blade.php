@@ -3,9 +3,6 @@
 @section('title', 'adminlogin')
 
 @section('content')
-    <h1 class="text-3xl font-bold underline">
-        landing page
-    </h1>
 
     <body class="bg-gray-100 h-screen flex items-center justify-center">
     <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -35,21 +32,28 @@
         }
 
     </style>
+
     <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle"/>
+        <img src="{{url('/Images/CELCOR.png')}}" alt="logo" width="385"/>
         <h1>Admin Login</h1>
         <p>--------------------------------------------------</p>
+        <br>
         <form>
         <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email Address">
+        <label class="label" for="employee-id">Email</label>
+                <input type="email" placeholder="Example: Juandelacruz@gmail.com">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password">
+            <label class="label" for="employee-id">Password</label>
+                <input type="password" placeholder="Enter your password">
             </div>
-        <button class="button">Login</button>
-        <br>
-        <a href="{{ url('Landing') }}" class="back-link">Back to Landing Page</a>
-        <br>
+            <a href="{{ url('accountrecovery') }}" class="link">Forgot Password?</a>
+            <br>
+            <br>
+            <a href="{{ url('dashboard') }}" class="button">Login</a>
+            <br>
+            <br>
+        <a href="{{ url('') }}" class="link">Back to Landing Page</a>
         <p>Don't have an account? <a href="{{ url('adminregistration') }}" class="link">Create one</a></p>
         </form>
     </div>

@@ -3,9 +3,6 @@
 @section('title', 'userlogin')
 
 @section('content')
-    <h1 class="text-3xl font-bold underline">
-     Vehicle Management System
-    </h1>
 
     <body class="bg-gray-100 h-screen flex items-center justify-center">
     <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -35,7 +32,7 @@
         }
     </style>
     <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle border:1px"/>
+        <img src="{{url('/Images/CELCOR.png')}}" alt="logo" width="385"/>
         <h1>User Login</h1>
         <p>--------------------------------------------------</p>
         <div class="form-group">
@@ -46,11 +43,11 @@
             <label class="label" for="password" size="30">Password</label>
                 <input type="password" id="password" class="form-control" placeholder="Enter your password" size="30">
                 <br>
-                <a href="{{ url('') }}" class="link">Forgot Password?</a>
+                <a href="{{ url('accountrecovery') }}" class="link">Forgot Password?</a>
             </div>
         <button class="button">Login</button>
         <br>
-            <a href="{{ url('Landing') }}" class="link">Back to Landing Page</a>
+            <a href="{{ url('') }}" class="link">Back to Landing Page</a>
             <br>
             <p>Don't have an account? <a href="{{ url('userregistration') }}" class="link">Create one</a></p>
     </div>

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Landing')
+@section('title', 'adminlogin')
 
 @section('content')
 
@@ -10,7 +10,7 @@
 
     <style>
         .button {
-            background-color: #003399;
+            background-color: #009900;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -19,7 +19,7 @@
         }
 
         .button:hover {
-            background-color: #48b2e9;
+            background-color: #88d08e;
         }
 
         .link {
@@ -33,17 +33,19 @@
 
     </style>
 
-        <div class="container mx-auto">
+<div class="container">
         <img src="{{url('/Images/CELCOR.png')}}" alt="logo" width="385"/>
-        <h1 class="text-3xl font-bold">Vehicle Management System</h1>
-        <p>------------------------------------------------------------</p>
+        <h1>Account Recovery</h1>
+        <p>--------------------------------------------------</p>
+        <label class="label" for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Example: Juandelacruz@gmail.com" size="15">
         <br>
-        <a href="{{ url('userlogin') }}" class="button">Login as User</a>
-        <a href="{{ url('adminlogin') }}" class="button">Login as Admin</a>
-    </div>
+        <br>
+        <a href="{{ url('') }}" class="button">Send Recovery Email</a>
+        <br>
+        </div>
 
-
-            @yield('content')
+@yield('content')
         </main>
     </div>
 

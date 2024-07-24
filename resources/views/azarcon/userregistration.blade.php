@@ -1,11 +1,11 @@
 @extends('layout')
 
-@section('title', 'Landing')
+@section('title', 'userregistration')
 
 @section('content')
 
 <div class="container">
-        <img src="{{url('/Images/Celcor Logo.jpg')}}" alt="logo" class="img-size-50 mr-3 img-circle"/>
+        <img src="{{url('/Images/CELCOR.png')}}" alt="logo" width="385"/>
         <h1 class="text-3xl font-bold text-center">Vehicle Management System</h1>
         <br>
         <h2 class="text-center">User Registration</h2>
@@ -90,7 +90,10 @@
         -->
 
                         <br>
-                        <button type="button" id="submitButton" class="btn btn-primary btn-block" style="display: block; margin: auto;">Register</button>
+                        <a href="{{ url('userlogin') }}" class="button">Register</a>
+                        <br>
+                        <br>
+
     </form>
 
     <div class="row justify-content-center">
