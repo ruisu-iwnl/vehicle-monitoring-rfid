@@ -5,6 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserListController;
 use App\Http\Controllers\ActivityLogController;
+use App\Http\Controllers\RecordsController;
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -75,6 +77,7 @@ Route::post('/adminregistration', [AdminController::class, 'register'])->name('a
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/users', [UserListController::class, 'index'])->name('users');
 Route::get('/activitylogs', [ActivityLogController::class, 'index'])->name('activitylogs');
+Route::get('/records', [RecordsController::class, 'index'])->name('records');
 
 Route::get('/accountrecovery', function () {
     return view('azarcon.accountrecovery');

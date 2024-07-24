@@ -31,8 +31,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{{ url('/records') }}" class="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 hover:text-blue-600">
+                                <i class="fas fa-users mr-3"></i> Time In / Time Out
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{ url('/users') }}" class="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 hover:text-blue-600">
-                                <i class="fas fa-users mr-3"></i> Registered Users
+                                <i class="fas fa-list mr-3"></i> Registered Users
                             </a>
                         </li>
                         <li>
@@ -40,6 +45,7 @@
                                 <i class="fas fa-list mr-3"></i> Activity Logs
                             </a>
                         </li>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <li>
                             <button id="logout-button" class="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 hover:text-blue-600">
                                 <i class="fas fa-sign-out-alt mr-3"></i> Logout
