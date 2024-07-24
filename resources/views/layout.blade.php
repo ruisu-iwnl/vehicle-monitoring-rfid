@@ -6,7 +6,7 @@
     <title>@yield('title', 'layout')</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     
-    @vite('resources/css/app.css') 
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
 
