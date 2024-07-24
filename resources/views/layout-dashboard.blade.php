@@ -41,12 +41,9 @@
                             </a>
                         </li>
                         <li>
-                            <form method="POST" action="{{ url('/logout') }}" class="flex items-center">
-                                @csrf
-                                <button type="submit" class="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 hover:text-blue-600">
-                                    <i class="fas fa-sign-out-alt mr-3"></i> Logout
-                                </button>
-                            </form>
+                            <button id="logout-button" class="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 hover:text-blue-600">
+                                <i class="fas fa-sign-out-alt mr-3"></i> Logout
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -59,6 +56,32 @@
         </main>
     </div>
 
+    <!-- Logout Confirmation Modal -->
+    <div id="logout-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+                <h2 class="text-lg font-semibold mb-4">Confirm Logout</h2>
+                <p class="mb-4">Are you sure you want to logout?</p>
+                <div class="flex justify-end space-x-4">
+                    <form method="POST" action="{{ url('/logout') }}">
+                        @csrf
+                        <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">Logout</button>
+                    </form>
+                    <button id="cancel-logout" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @livewireScripts 
+    <script>
+        document.getElementById('logout-button').addEventListener('click', function() {
+            document.getElementById('logout-modal').classList.remove('hidden');
+        });
+
+        document.getElementById('cancel-logout').addEventListener('click', function() {
+            document.getElementById('logout-modal').classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
