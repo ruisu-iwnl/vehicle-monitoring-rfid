@@ -43,26 +43,12 @@
                     <a>Vehicle Management System</a>
                 </div>
                 <ul>
-                    <li>
-                        <a class="link @if(Request::is('adminprofile')) active @endif" href="{{ url('') }}">
-                            <i class="fas fa-user"></i> Admin Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link @if(Request::is('adminaccount')) active @endif" href="{{ url('') }}">
-                            <i class="fas fa-cog"></i> Account Settings
-                        </a>
-                    </li>
-                    <li>
+
                         <a class="link @if(Request::is('registeredusers')) active @endif" href="{{ url('') }}">
                             <i class="fas fa-users"></i> Registered Users
                         </a>
                     </li>
-                    <li>
-                        <a class="link @if(Request::is('adminnotifications')) active @endif" href="{{ url('') }}">
-                            <i class="fas fa-bell"></i> Notifications
-                        </a>
-                    </li>
+
                     <li>
                         <a class="link @if(Request::is('admin/logs')) active @endif" href="{{ url('') }}">
                             <i class="fas fa-list"></i> Activity Logs
