@@ -4,9 +4,8 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class Admin extends Authenticatable implements AuthenticatableContract
+class Admin extends Authenticatable
 {
     use SoftDeletes;
 
@@ -14,7 +13,7 @@ class Admin extends Authenticatable implements AuthenticatableContract
         'employeenumber',
         'firstname',
         'lastname',
-        'emailaddress',
+        'emailaddress', // Match with the database column
         'contactnumber',
         'password',
     ];
@@ -22,4 +21,9 @@ class Admin extends Authenticatable implements AuthenticatableContract
     protected $hidden = [
         'password',
     ];
+
+    public function getAuthIdentifierName()
+    {
+        return 'emailaddress';
+    }
 }
